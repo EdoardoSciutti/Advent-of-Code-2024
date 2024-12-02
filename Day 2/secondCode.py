@@ -1,7 +1,7 @@
 import os
 
 def main():
-    print("Sciutti's solution to the first problem")
+    print("Sciutti's solution to the second problem")
     res = letturaRighe()
     print(f"Numero di righe valide: {res}")
 
