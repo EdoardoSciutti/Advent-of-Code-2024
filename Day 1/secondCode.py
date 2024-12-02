@@ -1,3 +1,5 @@
+import os
+
 def main():
     print("Sciutti's solution to the second problem")
     listaSinistra = []
@@ -5,10 +7,12 @@ def main():
     leggiFile(listaSinistra, listaDestra)
     listaSinistra = mergeSort(listaSinistra)
     listaDestra = mergeSort(listaDestra)
-    print("Punteggio di similarità:", calcolaSimilarita(listaSinistra, listaDestra))
+    risultato = calcolaSimilarita(listaSinistra, listaDestra)
+    print(f"Somma delle Similarita: {risultato}")
 
 def leggiFile(x, y):
-    with open("input.txt", "r") as file:
+    percorso_file = os.path.join(os.path.dirname(__file__), 'input.txt')
+    with open(percorso_file, 'r') as file:
         for linea in file:
             numeri = linea.split()
             if len(numeri) == 2:
