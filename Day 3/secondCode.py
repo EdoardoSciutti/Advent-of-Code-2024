@@ -2,7 +2,7 @@ import os
 import re
 
 def main():
-    print("Sciutti's solution to the first problem")
+    print("Sciutti's solution to the second problem")
     findValidMuls()
 
 def findValidMuls():
