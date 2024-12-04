@@ -1,7 +1,7 @@
 import os
 
 def main():
-    print("Sciutti's solution to the first problem")
+    print("Sciutti's solution to the first problem:")
     listaSinistra = []
     listaDestra = []
     leggiFile(listaSinistra, listaDestra)
